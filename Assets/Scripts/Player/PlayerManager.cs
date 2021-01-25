@@ -45,10 +45,10 @@ public class PlayerManager : MonoBehaviour
         dead = true;
         if(firstDeath)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
         else
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
     }
     
     public bool isDead()
@@ -88,18 +88,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        if(level == 1)
-        {
-            dead = false;
-            curHP = healthPoints;
-            UI = GameObject.Find("UI").transform.Find("Canvas").gameObject;
-
-            Transform spawnPoint = GameObject.Find("SpawnPlayerPoint").transform;
-            transform.position = new Vector3(spawnPoint.position.x,
-                spawnPoint.position.y,
-                spawnPoint.position.z);
-        }
-        else if(level == 2)
+        if(level == 2)
         {
             dead = false;
             curHP = healthPoints;
@@ -111,6 +100,17 @@ public class PlayerManager : MonoBehaviour
                 spawnPoint.position.z);
         }
         else if(level == 3)
+        {
+            dead = false;
+            curHP = healthPoints;
+            UI = GameObject.Find("UI").transform.Find("Canvas").gameObject;
+
+            Transform spawnPoint = GameObject.Find("SpawnPlayerPoint").transform;
+            transform.position = new Vector3(spawnPoint.position.x,
+                spawnPoint.position.y,
+                spawnPoint.position.z);
+        }
+        else if(level == 4)
         {
             dead = false;
             curHP = healthPoints;

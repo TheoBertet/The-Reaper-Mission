@@ -55,7 +55,7 @@ public class SecondCinematic : MonoBehaviour
         else
         {
             if (Time.time > timeCode + secondsBetweenSentences)
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
         }
 
         foreach (int keyframe in keyframeForImage)

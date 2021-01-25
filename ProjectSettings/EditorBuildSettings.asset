@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 93a9170c88cbb9048879b39c074b910d
+  - enabled: 1
     path: Assets/Scenes/ReaperDialog.unity
     guid: 0e3468fed0d4cce43a58e00c27b048eb
   - enabled: 1

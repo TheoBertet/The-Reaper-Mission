@@ -18,7 +18,7 @@ public class AltarScript : MonoBehaviour
     {
         if (playerIsNear && Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 

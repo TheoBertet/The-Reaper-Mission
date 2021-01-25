@@ -46,16 +46,16 @@ public class GameManager : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        if(level != 0)
-        {
-            GameObject.Find("Player").SetActive(true);
-        }
-        else
-        {
-            GameObject.Find("Player").SetActive(false);
-        }
+        //if(level != 1)
+        //{
+        //    GameObject.Find("Player").SetActive(true);
+        //}
+        //else
+        //{
+        //    GameObject.Find("Player").SetActive(false);
+        //}
 
-        if(level == 2)
+        if(level == 3)
         {
             GameObject.Find("Main Camera").GetComponent<CameraClamping>().targetToFollow = GameObject.Find("Player").transform;
 
